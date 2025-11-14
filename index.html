@@ -1,0 +1,28 @@
+<h1>External Dynamic Media Rendition Demo</h1>
+    <p>Paste a Dynamic Media base URL below. The renditions will update automatically.</p>
+
+    <input id="baseInput"
+      placeholder="Paste Dynamic Media URL (e.g. https://s7d1.scene7.com/is/image/adobejimmcg/imgi_8_europe)"
+      oninput="updateRenditions()"/>
+
+    <div class="grid">
+
+      <div class="slot">
+        <h3>Base Image</h3>
+        <img id="baseImg" src="">
+        <div id="baseUrl" class="url"></div>
+      </div>
+
+      <div class="slot">
+        <h3>Flip Vertical</h3>
+        <img id="flipImg" src="">
+        <div id="flipUrl" class="url"></div>
+      </div>
+
+      <div class="slot">
+        <h3>Grayscale</h3>
+        <img id="grayImg" src="">
+        <div id="grayUrl" class="url"></div>
+      </div>
+
+    </div>
